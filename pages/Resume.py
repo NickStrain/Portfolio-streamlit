@@ -1,15 +1,19 @@
 import streamlit as st
-import base64
 
-# Function to display the PDF
-def display_pdf(pdf_file):
-    with open(pdf_file, "rb") as f:
-        base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-    pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="900" height="1000" type="application/pdf"></iframe>'
-    st.markdown(pdf_display, unsafe_allow_html=True)
+# Function to display a download button for the PDF
+def display_pdf_download(pdf_file_path):
+    with open(pdf_file_path, "rb") as pdf_file:
+        pdf_bytes = pdf_file.read()
+
+    st.download_button(
+        label="Download PDF",
+        data=pdf_bytes,
+        file_name="resume.pdf",
+        mime="application/pdf"
+    )
 
 # Streamlit App
-st.title("Resume")
+st.title("Download Resume")
 
-pdf_file_path = "img/redes/shugavaneshwar_resume.pdf"  # Replace with your PDF file path
-display_pdf(pdf_file_path)
+pdf_file_path = "img/redes/shugavaneshwar_resume.pdf"  # Ensure the file is in the correct path
+display_pdf_download(pdf_file_path)

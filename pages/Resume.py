@@ -1,19 +1,13 @@
 import streamlit as st
 
-# Function to display a download button for the PDF
-def display_pdf_download(pdf_file_path):
-    with open(pdf_file_path, "rb") as pdf_file:
-        pdf_bytes = pdf_file.read()
-
-    st.download_button(
-        label="Download PDF",
-        data=pdf_bytes,
-        file_name="resume.pdf",
-        mime="application/pdf"
-    )
+# Function to display PDF from URL
+def display_pdf_from_url(pdf_url):
+    pdf_display = f'<iframe src="{pdf_url}" width="900" height="1000" type="application/pdf"></iframe>'
+    st.markdown(pdf_display, unsafe_allow_html=True)
 
 # Streamlit App
-st.title("Download Resume")
+st.title("Resume")
 
-pdf_file_path = "img/redes/shugavaneshwar_resume.pdf"  # Ensure the file is in the correct path
-display_pdf_download(pdf_file_path)
+# PDF hosted URL (replace with your actual URL)
+pdf_url = "https://github.com/NickStrain/Portfolio-streamlit/blob/main/img/redes/shugavaneshwar_resume.pdf"  # Update with your PDF URL
+display_pdf_from_url(pdf_url)

@@ -9,5 +9,5 @@ def display_pdf_from_url(pdf_url):
 st.title("Resume")
 
 # PDF hosted on a URL (replace with the actual URL of your PDF file)
-pdf_url = "img\redes\shugavaneshwar_resume.pdf"
+pdf_url = "img/redes/shugavaneshwar_resume.pdf"
 display_pdf_from_url(pdf_url)

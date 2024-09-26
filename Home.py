@@ -12,9 +12,9 @@ class AboutMe:
             st.title(self.title)
             st.info(self.about)
             
-            st.write('<a href="https://github.com/aalvaropc">💻 Github</a>', unsafe_allow_html=True)
-            st.write('<a href="https://www.linkedin.com/in/aalvarop-pe/">🔗 LinkedIn</a>', unsafe_allow_html=True)
-            st.write('<a href="mailto:aalvaropc@gmail.com">📨 Gmail</a>', unsafe_allow_html=True)
+            st.write('<a href="https://github.com/NickStrain">💻 Github</a>', unsafe_allow_html=True)
+            st.write('<a href="https://www.linkedin.com/in/shuga-vaneshwar-922603226/">🔗 LinkedIn</a>', unsafe_allow_html=True)
+            st.write('<a href="mailto:shugavaneshwar13@gmail.com">📨 Gmail</a>', unsafe_allow_html=True)
         with col2:
             st.image(self.img, width=560)
             

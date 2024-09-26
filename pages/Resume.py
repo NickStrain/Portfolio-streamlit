@@ -1,6 +1,6 @@
 import streamlit as st
 
-# Function to display PDF from URL
+# Function to display a PDF from a URL
 def display_pdf_from_url(pdf_url):
     pdf_display = f'<iframe src="{pdf_url}" width="900" height="1000" type="application/pdf"></iframe>'
     st.markdown(pdf_display, unsafe_allow_html=True)
@@ -8,6 +8,6 @@ def display_pdf_from_url(pdf_url):
 # Streamlit App
 st.title("Resume")
 
-# PDF hosted URL (replace with your actual URL)
-pdf_url = "img/redes/shugavaneshwar_resume.pdf"  # Update with your PDF URL
+# PDF hosted on a URL (replace with the actual URL of your PDF file)
+pdf_url = "img/redes/shugavaneshwar_resume.pdf"
 display_pdf_from_url(pdf_url)

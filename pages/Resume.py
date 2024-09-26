@@ -11,5 +11,5 @@ def display_pdf(pdf_file):
 # Streamlit App
 st.title("Resume")
 
-pdf_file_path = "img\\redes\shugavaneshwar resume.pdf"  # Replace with your PDF file path
+pdf_file_path = "img/redes/shugavaneshwar_resume.pdf"  # Replace with your PDF file path
 display_pdf(pdf_file_path)

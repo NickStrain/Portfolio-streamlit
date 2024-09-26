@@ -17,11 +17,11 @@ class Projects:
             col = col2 if col == col1 else col1
         
 projects = Projects("Proyectos", {
-                "Neural Machine Translation for tamil": {"img": "img\proyectos\\neuralmachinetranslation.png", "link": "https://github.com/NickStrain/Machine-Translation.git"},
-                "Image Captioning": {"img": "img\proyectos\imagecaption.png", "link": "https://github.com/NickStrain/Image-Captioning.git"},
-                "image-segmentation-using-UNet": {"img": 'img\proyectos\\net.png', "link": "https://github.com/NickStrain/image-segmentation-using-UNet.git"},
-                "Satellite-image-segmentation": {"img": "img\proyectos\image_seg.png", "link": "https://github.com/NickStrain/Satellite-image-segmentation.git"},
-                "Tamil-Sentiment-Analysis": {"img": "img\proyectos\\tamilsent.png", "link": "https://github.com/NickStrain/Tamil-Sentiment-Analysis.git"},
-                "Stock-market-prediction": {"img": "img\proyectos\stock.png", "link": "https://github.com/NickStrain/Stock-market-prediction.git"},
+                "Neural Machine Translation for tamil": {"img": "img/proyectos/neuralmachinetranslation.png", "link": "https://github.com/NickStrain/Machine-Translation.git"},
+                "Image Captioning": {"img": "img/proyectos/imagecaption.png", "link": "https://github.com/NickStrain/Image-Captioning.git"},
+                "image-segmentation-using-UNet": {"img": 'img/proyectos/net.png', "link": "https://github.com/NickStrain/image-segmentation-using-UNet.git"},
+                "Satellite-image-segmentation": {"img": "img/proyectos/image_seg.png", "link": "https://github.com/NickStrain/Satellite-image-segmentation.git"},
+                "Tamil-Sentiment-Analysis": {"img": "img/proyectos/tamilsent.png", "link": "https://github.com/NickStrain/Tamil-Sentiment-Analysis.git"},
+                "Stock-market-prediction": {"img": "img/proyectos/stock.png", "link": "https://github.com/NickStrain/Stock-market-prediction.git"},
                 })
 projects.display()
